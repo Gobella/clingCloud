@@ -13,21 +13,35 @@
 ##镜像安装文件
 用户在获取到Sailing Cloud的安装文件后，需要根据安装包里的内容进行安装，基于master节点和minion节点的差异，安装包里的内容有所不同。
 ###master节点安装包文件
-1. image （存放配置文件的文件夹）
-2. deploy-master.sh 
-3. deploy_auto_ma 
-4. deploy_addone_ali （**后期应该会rename，如改成deploy_addone，现在保留ali的后缀是为了与内网机器上的部署binary进行区分**）
-5. clean-and-deploy-master.sh
-6. tarpackagema.tar
-7. validate_master.sh
-8. clean.sh 
+* 
+ image （存放配置文件的文件夹）
+* 
+deploy-master.sh 
+* 
+ deploy_auto_ma 
+* 
+deploy_addone_ali （**后期应该会rename，如改成deploy_addone，现在保留ali的后缀是为了与内网机器上的部署binary进行区分**）
+* 
+ clean-and-deploy-master.sh
+* 
+ tarpackagema.tar
+* 
+ validate_master.sh
+* 
+ clean.sh 
 ###minion节点安装包文件
-1. clean.sh
-2. deploy-minion.sh 
-3. deploy_auto_mi
-4. clean-and-deploy-minion.sh 
-5. tarpackagemi.tar 
-6. validate_minion.sh 
+* 
+ clean.sh
+* 
+deploy-minion.sh 
+* 
+ deploy_auto_mi
+* 
+ clean-and-deploy-minion.sh 
+* 
+ tarpackagemi.tar 
+* 
+validate_minion.sh 
 
 ##安装提示
 用户在安装过程中，随着步骤依次进展，自动部署脚本会有一些提示语指导你进行安装，下面列出一些常见的安装提示语，并给出解释，用户如果在安装过程中有疑惑，可到**安装提示**来寻求帮助。
