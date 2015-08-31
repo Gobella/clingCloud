@@ -7,7 +7,7 @@
 
 ##注册账户
 
-欢迎来到Sailing Cloud，首先用户需要注册账户，Sailing Cloud对新注册的用户提供免费的试用服务，要想享受这一优惠，体验业界领先的一站式容器云服务，先注册成为Sailing Cloud的用户吧，用户可访问http://10.10.105.72/promoPage/进入Sailing Cloud官网。
+欢迎来到Sailing Cloud，首先用户需要注册账户，Sailing Cloud对新注册的用户提供免费的试用服务，要想享受这一优惠，体验业界领先的一站式容器云服务，先注册成为Sailing Cloud的用户吧，用户可访问[Sailing Cloud官网](https://10.10.102.104:9000/)进行试用。
 
 ![](1.png)
 
