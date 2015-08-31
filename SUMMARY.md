@@ -5,5 +5,5 @@
    * [领航云入门教程](content/ling_hang_yun_ru_men_jiao_cheng.md)
    * [安装部署手册](content/an_zhuang_bu_shu_shou_ce.md)
    * [产品功能](content/chan_pin_gong_neng.md)
-   * 初识Sailing Cloud
+   * [初识Sailing Cloud](content/chu_shisailing_cloud.md)
 
