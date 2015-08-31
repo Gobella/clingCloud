@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
    * [初识Sailing Cloud](content/chu_shisailing_cloud.md)
-   * [初识SailingCloud](content/chu_shisailingcloud.md)
 * [SailingCloud文档](content/chapter1.md)
    * [安装部署手册](content/an_zhuang_bu_shu_shou_ce.md)
    * [领航云入门教程](content/ling_hang_yun_ru_men_jiao_cheng.md)
