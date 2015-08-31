@@ -28,7 +28,8 @@
 弹出创建应用环境选项卡，用户需按步骤依次配置目标云、应用类型、War包和资源参数。
 ###选择目标云
 该功能是Sailing Cloud一大特色，Sailing Cloud支持主流的IaaS服务提供商，如阿里云等，还可显示用户当前剩余的内存容量和存储容量，方便用户对IaaS资源池的容量有一个概括了解
-![Alt text](./3.png)
+![](3.png)
+
 ###选择应用类型
 为应用选择语言框架，如Java、Python、Ruby等，举例，选择Java语言，选择JDK版本和Tomcat版本。
 ![Alt text](./4.png)
