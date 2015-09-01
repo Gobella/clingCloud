@@ -2,52 +2,37 @@
 
 ##镜像获取
 
-澜云提供安全的公有镜像供用户使用，所有镜像经定制化技术改造，不同于以往，用户不需要专业的安装技术，满足简单易用的原则，用户可从澜云**官方**提供的**七牛云存储地址**下载镜像安装包，通过澜云提供的自动化安装脚本，用户只需几行简单命令，即可完成安装。  
+澜云提供基于安全的公有镜像供用户使用，所有镜像经定制化技术改造，不同于以往，用户不需要专业的安装技术，满足简单易用的原则，用户可从澜云**官方**提供的**七牛云存储地址**下载镜像安装包，通过澜云提供的自动化安装脚本，用户只需几行简单命令，即可完成安装。  
 
 ## 安装说明
 用户在下载镜像文件后,在安装之前，有几点需要说明，用户在自己的机器上指定一台可连接外网的机器作为master node,master node节点的机器作为整个机器集群的中枢，承担着连接内外网的媒介作用，需要为master节点的机器设置外网IP,minion节点机器支持离线功能。master节点对机器的硬件性能要求较高，要求承担master node的机器具备4核、8G内存和至少50g的硬盘空间。此外，若干台作为minion node。然后安装部署Docker及相应组件。安装镜像的情景主要有两种，用户可根据具体情景进行安装,主要情景有：
-* 
-**在一个新环境中开始部署**
-* 
- **重新部署master节点**
+1. **在一个新环境中开始部署**
+2.  **重新部署master节点**
+##安装环境
+SailingCloud支持linux系统安装环境，目前支持Ubantu和centOS等操作系统，系统版本以最新的稳定发行版为准，
+
 ##镜像安装文件
-用户在获取到Sailing Cloud的安装文件后，需要根据安装包里的内容进行安装，基于master节点和minion节点的差异，安装包里的内容有所不同。
-###master节点安装包文件
-* 
- image （存放配置文件的文件夹）
-* 
-deploy-master.sh 
-* 
- deploy_auto_ma 
-* 
-deploy_addone_ali （**后期应该会rename，如改成deploy_addone，现在保留ali的后缀是为了与内网机器上的部署binary进行区分**）
-* 
- clean-and-deploy-master.sh
-* 
- tarpackagema.tar
-* 
- validate_master.sh
-* 
- clean.sh 
-###minion节点安装包文件
-* 
- clean.sh
-* 
-deploy-minion.sh 
-* 
- deploy_auto_mi
-* 
- clean-and-deploy-minion.sh 
-* 
- tarpackagemi.tar 
-* 
-validate_minion.sh 
+用户在获取到Sailing Cloud的安装文件后，需要根据安装包里的内容进行安装，master节点和minion节点的镜像安装文件存在差异，安装包里的内容有所不同。下面列出master节点和minion节点的安装包文件对比表，用户在获取安装文件后，可比对该表核查安装文件的完整性。
+
+|master节点安装包文件   | minion节点安装包文件  |
+| :-------- | :--: |
+| image  |    |
+| deploy-master.sh   |  deploy-minion.sh    |
+| deploy_auto_ma   |  deploy_auto_mi  |
+| deploy_addone_ali   |   |
+|  clean-and-deploy-master.sh |   clean-and-deploy-minion.sh    |
+|  tarpackagema.tar |  tarpackagemi.tar   |
+|  validate_master.sh| validate_minion.sh  |
+|  clean.sh |  clean.sh   |
+
+
 
 ##安装提示
 用户在安装过程中，随着步骤依次进展，自动部署脚本会有一些提示语指导你进行安装，下面列出一些常见的安装提示语，并给出解释，用户如果在安装过程中有疑惑，可到**安装提示**来寻求帮助。
 
-| Deploy master node   |    部署master节点 | 
+| 安装提示语   |  解释   | 
 | :-------- | --------| 
+| Deploy master node   |    部署master节点 | 
 | Please input cluster name| 输入集群名称 |  
 | Please input user name| 输入用户名 |  
 | Please input password| 输入用户密码 |  
