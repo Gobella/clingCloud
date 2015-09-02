@@ -110,3 +110,13 @@ Please input net interface, default eth0: 请输入内网网卡，默认为eth0
 Please input user name: 请输入用户名，与部署master节点时输入的用户名相同
 Please input your master intranet ip: 请输入master节点的内网ip
 ```
+##故障处理
+如果在集群运维过程中出现问题，可以尝试通过validate _ master.sh  以及 validate _ minion.sh判断组件运行是否正常，如果组件一切运行正常，通过界面仍然无法正常操作，请联系客服，如果组件运行故障，可以尝试以下方式重启组件，如果仍无法恢复，请联系客服。下表列出了一些常见故障问题及解决方案。
+
+
+| 问题提示语   |  解决方法  | 
+| :-------- | --------| 
+|  etcd not ready  |     | 
+|  monit server not ready|  请确保5000端口正常打开，之后执行 docker run --privileged=true --net=host  -d -v '/etc/ssl/certs:/etc/ssl/certs' monitserver:latest
+  |  
+| gorouter not ready| docker run --net=host --restart=on-failure:10 -itd -p 80:8081 -p 8082 liuyilun/gorouter|
