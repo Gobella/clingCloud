@@ -7,16 +7,23 @@
 
 ##基本环境准备
 ###离线安装docker
-开始部署集群之前，需要在所有的机器上安装好docker环境，我们提供了离线的docker安装方式，目前我们支持CentOS 以及 Ubuntu 14.04的单机版离线安装包，采用的docker 版本为 1.7.1，离线安装的步骤如下：
-下载好安装包，并且解压之后，进入到对应的操作系统目录，之后执行
-`./offlineDockerInstall.sh <host ip>`如 `./offlineDockerInstall.sh 10.10.102.28` 
+
+开始部署集群之前，需要在所有的机器上安装好docker环境，我们提供了离线的docker安装方式，目前我们提供CentOS （CentOS7.x或以上）以及 Ubuntu 14.04的单机版离线安装包，离线安装的步骤如下：
+* 
+下载好安装包，并且解压之后，
+* 
+进入到对应的操作系统目录，
+* 
+之后执行
+`./offlineDockerInstall.sh <host ip>`如 `./offlineDockerInstall.sh 10.10.102.28`
+
 
 ###在线安装docker
 还可以根据docker官方文档进行在线安装。
 请确保docker环境部署正常，docker1 deamon正常启动之后，在进行后续的操作。
 
 ###镜像下载
-在部署集群之前，需要把集群部署需要的组件提前下载好，已注册的用户可以通过安装包中的 ./deploy_download 客户端，可以直接将master节点和minion节点所需要的镜像包下载下来：`./deploy_download -u=<username> -p=<password>`。
+在部署集群之前，需要把集群部署需要的组件提前下载好，已注册的用户可以通过安装包中的 ./deploy_download 客户端，可以直接将master节点和minion节点所需要的镜像包下载下来：`./deploy_download -u=<username> -p=<password>`。并且自行将minion节点需要的tar包分发到各个节点上。
 ## 安装说明
 用户在下载镜像文件后,在安装之前，有几点需要说明，用户在自己的机器上指定一台可连接外网的机器作为master node,master node节点的机器作为整个机器集群的中枢，承担着连接内外网的媒介作用，需要为master节点的机器设置外网IP,minion节点机器支持离线功能。master节点对机器的硬件性能要求较高，要求承担master node的机器具备4核、8G内存和至少50g的硬盘空间。此外，若干台作为minion node。然后安装部署Docker及相应组件。安装镜像的情景主要有两种，用户可根据具体情景进行安装,主要情景有：
 1. **在一个新环境中开始部署**
@@ -113,10 +120,37 @@ Please input your master intranet ip: 请输入master节点的内网ip
 ##故障处理
 如果在集群运维过程中出现问题，可以尝试通过validate _ master.sh  以及 validate _ minion.sh判断组件运行是否正常，如果组件一切运行正常，通过界面仍然无法正常操作，请联系客服，如果组件运行故障，可以尝试以下方式重启组件，如果仍无法恢复，请联系客服。下表列出了一些常见故障问题及解决方案。
 
+首先请确认组件是否存在异常，可根据退出码进行判断：
+* 
+** 如果退出码为0，则重启该组件**
+* 
+**如果退出码不为0，请联系客服。**
 
-| 问题提示语   |  解决方法  | 
-| :-------- | --------| 
-|  etcd not ready  |     | 
-|  monit server not ready|  请确保5000端口正常打开，之后执行 docker run --privileged=true --net=host  -d -v '/etc/ssl/certs:/etc/ssl/certs' monitserver:latest
-  |  
-| gorouter not ready| docker run --net=host --restart=on-failure:10 -itd -p 80:8081 -p 8082 liuyilun/gorouter|
+
+用户可对问题组件进行排查：
+* 
+etcd组件问题 ：通过以下命令检查运行状态
+$ docker -H unix:///var/run/docker-bootstrap.sock ps | grep etcd 
+假设名为infra0的组件退出，且退出码为0，则执行
+$ docker -H unix:///var/run/docker-bootstrap.sock restart infra0
+假设该组件异常退出，请联系客服
+
+* 
+monit server ：通过以下命令检查运行状态
+$ docker ps | grep monitserver
+假设该组件退出码为0，则执行
+$ docker start $(docker ps | grep monitserver | awk '{print $1}') 
+假设组件异常退出，请联系客服。
+
+* 
+gorouter： 检查运行状态
+$ docker ps | grep gorouter
+假设该组件退出码为0，则执行
+$ docker start $(docker ps | grep gorouter | awk '{print $1}') 
+假设组件异常退出，请联系客服。
+
+ 
+
+
+
+
