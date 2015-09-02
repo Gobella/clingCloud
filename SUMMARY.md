@@ -8,4 +8,5 @@
    * [产品功能](content/chan_pin_gong_neng.md)
        * [拓扑管理](content/产品功能/tuo_pu_guan_li.md)
        * [War包管理](content/产品功能/warbao_guan_li.md)
+       * 云主机管理
 
