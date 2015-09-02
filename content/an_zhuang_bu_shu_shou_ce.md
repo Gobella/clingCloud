@@ -124,7 +124,7 @@ Please input your master intranet ip: 请输入master节点的内网ip
 **如果退出码不为0，请联系客服。**
 
 
-用户可对问题组件进行排查：
+用户可按下面的方法对问题组件进行排查：
 * 
 etcd组件问题 ：通过以下命令检查运行状态
 $ docker -H unix:///var/run/docker-bootstrap.sock ps | grep etcd 
