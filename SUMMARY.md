@@ -6,6 +6,7 @@
    * [安装部署手册](content/an_zhuang_bu_shu_shou_ce.md)
        * [基本环境准备](content/安装部署手册/ji_ben_huan_jing_zhun_bei.md)
        * [master节点部署](content/安装部署手册/masterjie_dian_bu_shu.md)
+       * minion节点部署
    * [领航云入门教程](content/ling_hang_yun_ru_men_jiao_cheng.md)
        * [注册帐号](content/SailingCloud入门教程/zhu_ce_zhang_hao.md)
        * [平台安装](content/SailingCloud入门教程/ping_tai_an_zhuang.md)
