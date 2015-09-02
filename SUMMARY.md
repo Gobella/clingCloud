@@ -8,6 +8,7 @@
        * [注册帐号](content/SailingCloud入门教程/zhu_ce_zhang_hao.md)
        * [平台安装](content/SailingCloud入门教程/ping_tai_an_zhuang.md)
        * [创建第一个应用](content/SailingCloud入门教程/chuang_jian_di_yi_ge_ying_yong.md)
+       * 灰度升级和一键部署
    * [产品功能](content/chan_pin_gong_neng.md)
        * [拓扑管理](content/产品功能/tuo_pu_guan_li.md)
        * [War包管理](content/产品功能/warbao_guan_li.md)
