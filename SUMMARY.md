@@ -7,6 +7,7 @@
    * [领航云入门教程](content/ling_hang_yun_ru_men_jiao_cheng.md)
        * [注册帐号](content/SailingCloud入门教程/zhu_ce_zhang_hao.md)
        * [平台安装](content/SailingCloud入门教程/ping_tai_an_zhuang.md)
+       * 创建第一个应用
    * [产品功能](content/chan_pin_gong_neng.md)
        * [拓扑管理](content/产品功能/tuo_pu_guan_li.md)
        * [War包管理](content/产品功能/warbao_guan_li.md)
