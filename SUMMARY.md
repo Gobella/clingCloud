@@ -10,4 +10,5 @@
        * [War包管理](content/产品功能/warbao_guan_li.md)
        * [云主机管理](content/领航云入门教程/yun_zhu_ji_guan_li.md)
        * [镜像服务](content/产品功能/jing_xiang_wen_jian_guan_li.md)
+       * 应用管理
 
