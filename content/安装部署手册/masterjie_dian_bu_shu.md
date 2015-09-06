@@ -21,26 +21,29 @@
 ```
 # ./deploy-master.sh 
 Deploy master node
-Please input cluster name: 请输入指定的集群名称
-Please input user name: 请输入指定用户名
-Please input password: 请输入指定用户密码
-Please input net interface, default eth0: 请输入内网网卡，默认为eth0
-Please input public ip: 请输入外网ip
-Please input your intranet ip: 请输入内网ip
-Please input data dir where you want to mount registry and etcd: 请输入指定的存储registry与etcd数据的绝对路径
-Do you want to overwrite the existing cluster name forcely (y/n):输入y或n，用以确认是否覆写已有的同名集群
+Please input cluster name: 
+Please input user name: 
+Please input password: 
+Please input net interface, default eth0: 
+Please input public ip: 
+Please input intranet ip: 
+Please input directory where you want to store application data, default /mnt: 
+How long do you prefer to store application log, counted by day, default 1: 
+Do you want to overwrite the existing cluster name forcely (y/n), default n: 
 ```
 
 ###重新部署master节点
 以root用户权限执行部署脚本，同样需要输入相应参数，后续和在新环境中部署一样。
+
 ```
 $./clean-and-deploy-master.sh
 Deploy master node
-Please input cluster name: 请输入指定的集群名称
-Please input user name: 请输入指定用户名
-Please input password: 请输入指定用户密码
-Please input net interface, default eth0: 请输入内网网卡，默认为eth0
-Please input public ip: 请输入外网ip
-Please input your intranet ip: 请输入内网ip
-Please input data dir where you want to mount registry and etcd: 请输入指定的存储registry与etcd数据的绝对路径
-Do you want to overwrite the existing cluster name forcely (y/n):输入y或n，用以确认是否覆写已有的同名集群
+Please input cluster name: 
+Please input user name: 
+Please input password: 
+Please input net interface, default eth0: 
+Please input public ip: 
+Please input your intranet ip: 
+Please input data dir where you want to mount registry and etcd: 
+Do you want to overwrite the existing cluster name forcely (y/n):
+```
