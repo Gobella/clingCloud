@@ -12,21 +12,21 @@
 用户可按下面的方法对问题组件进行排查：
 * 
 etcd组件问题 ：通过以下命令检查运行状态
-$ docker -H unix:///var/run/docker-bootstrap.sock ps | grep etcd 
+```$ docker -H unix:///var/run/docker-bootstrap.sock ps | grep etcd``` 
 假设名为infra0的组件退出，且退出码为0，则执行
-$ docker -H unix:///var/run/docker-bootstrap.sock restart infra0
+```$ docker -H unix:///var/run/docker-bootstrap.sock restart infra0```
 假设该组件异常退出，请联系客服
 
 * 
 monit server ：通过以下命令检查运行状态
-$ docker ps | grep monitserver
+```$ docker ps | grep monitserver```
 假设该组件退出码为0，则执行
-$ docker start $(docker ps | grep monitserver | awk '{print $1}') 
+```$ docker start $(docker ps | grep monitserver | awk '{print $1}') ```
 假设组件异常退出，请联系客服。
 
 * 
 gorouter： 检查运行状态
-$ docker ps | grep gorouter
+```$ docker ps | grep gorouter```
 假设该组件退出码为0，则执行
-$ docker start $(docker ps | grep gorouter | awk '{print $1}') 
+```$ docker start $(docker ps | grep gorouter | awk '{print $1}')``` 
 假设组件异常退出，请联系客服。
