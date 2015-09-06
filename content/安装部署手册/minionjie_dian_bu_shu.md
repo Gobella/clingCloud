@@ -6,9 +6,9 @@
 ```
 # ./deploy-minion.sh
 Deploy minion node
-Please input net interface, default eth0: 请输入内网网卡，默认为eth0
-Please input user name: 请输入用户名，与部署master节点时输入的用户名相同
-Please input your master intranet ip: 请输入master节点的内网ip
+Please input net interface, default eth0: 
+Please input user name: 
+Please input your master intranet ip: 
 
 ```
 ###重新部署minion节点
@@ -17,7 +17,7 @@ Please input your master intranet ip: 请输入master节点的内网ip
 ```
 $./clean-and-deploy-minion.sh
 Deploy minion node
-Please input net interface, default eth0: 请输入内网网卡，默认为eth0
-Please input user name: 请输入用户名，与部署master节点时输入的用户名相同
-Please input your master intranet ip: 请输入master节点的内网ip
+Please input net interface, default eth0: 
+Please input user name: 
+Please input your master intranet ip: 
 ```
