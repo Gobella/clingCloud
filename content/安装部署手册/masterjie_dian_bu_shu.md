@@ -44,6 +44,7 @@ Please input password:
 Please input net interface, default eth0: 
 Please input public ip: 
 Please input your intranet ip: 
-Please input data dir where you want to mount registry and etcd: 
-Do you want to overwrite the existing cluster name forcely (y/n):
+Please input directory where you want to store application data, default /mnt: 
+How long do you prefer to store application log, counted by day, default 1: 
+Do you want to overwrite the existing cluster name forcely (y/n), default n: 
 ```
