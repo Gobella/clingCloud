@@ -1,7 +1,6 @@
 ##域名管理
 
-SailingCloud提供简便先进的域名管理，用户在创建应用环境时，最后一步会提示用户设置应用参数，详见[创建第一个应用](https://183.129.190.82:9000/docs/content/SailingCloud%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/chuang_jian_di_yi_ge_ying_yong.html)，
-
+SailingCloud提供简便先进的域名管理，用户在创建应用环境时，最后一步会提示用户设置应用参数，可参见[创建第一个应用](https://183.129.190.82:9000/docs/content/SailingCloud%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/chuang_jian_di_yi_ge_ying_yong.html)。
 
 
 在该图中，用户有两种选择：
