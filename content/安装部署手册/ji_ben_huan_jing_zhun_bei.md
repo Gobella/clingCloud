@@ -1,7 +1,7 @@
 ##基本环境准备
 
 ###在线安装docker
-推荐用户根据docker官方文档进行在线安装。ＳailingCloud会率先支持docker最新稳定版本，请确保docker环境部署正常，docker deamon正常启动之后，再进行后续的操作。
+推荐用户根据docker官方文档进行在线安装。SailingCloud会率先支持docker最新稳定版本，请确保docker环境部署正常，docker deamon正常启动之后，再进行后续的操作。
 
 ###离线安装docker
 
