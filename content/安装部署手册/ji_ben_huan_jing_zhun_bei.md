@@ -10,7 +10,7 @@
 
 ###离线安装docker
 
-目前SailingCloud提供了离线的docker安装方式，要求用户的操作系统是64位的ubuntu14.04或Centos7.0，
+目前SailingCloud也提供了离线的docker安装方式，要求用户的操作系统是64位的ubuntu14.04或Centos7.0，
 
 *注：Centos安装时注意改变SOFTWARE SELECTION的Minimal Install默认选项，修改为其他选项（**推荐Server with GUI**）将包安装完整（**操作系统包安装不完整可能会导致离线docker安装后使用不稳定**）
 *
