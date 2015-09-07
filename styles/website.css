@@ -157,3 +157,6 @@ footer{
 .book{
     top:120px;
 }
+.book-search{
+    display:none !important;
+}
