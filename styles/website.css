@@ -70,7 +70,7 @@ a{
 	display: block;
 	height: 38px;
 	width: 240px;
-	background: url(../img/sailing.png) 0px 0px no-repeat;
+	background: url(../sailing.png) 0px 0px no-repeat;
 	overflow: hidden;
 	text-indent: -9999px;
 	cursor: pointer;
