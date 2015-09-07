@@ -1,8 +1,16 @@
 ##基本环境准备
 
+###在线安装docker
+推荐用户根据docker官方文档进行在线安装。ＳailingCloud会率先支持docker最新稳定版本，请确保docker环境部署正常，docker deamon正常启动之后，再进行后续的操作。
+
 ###离线安装docker
 
-开始部署集群之前，需要在所有的机器上安装好docker环境，我们提供了离线的docker安装方式，目前我们提供CentOS （CentOS7.x或以上）以及 Ubuntu 14.04的单机版离线安装包，离线安装的步骤如下：
+开始部署集群之前，需要在所有的机器上安装好docker环境，目前SailingCloud提供了离线的docker安装方式，要求用户的操作系统是64位的ubuntu14.04或Centos7.0，
+
+*注：Centos安装时注意改变SOFTWARE SELECTION的Minimal Install默认选项，修改为其他选项（**推荐Server with GUI**）将包安装完整（**操作系统包安装不完整可能会导致离线docker安装后使用不稳定**）
+*
+
+用户在使用CentOS7以及 Ubuntu 14.04的单机版离线安装包进行安装时，离线安装的步骤如下：
 * 
 下载好安装包，并且解压之后，
 * 
@@ -12,9 +20,6 @@
 `./offlineDockerInstall.sh <host ip>`如 `./offlineDockerInstall.sh 10.10.102.28`
 
 
-###在线安装docker
-还可以根据docker官方文档进行在线安装。
-请确保docker环境部署正常，docker1 deamon正常启动之后，在进行后续的操作。
 
 ###镜像下载
 在部署集群之前，需要把集群部署需要的组件提前下载好，已注册的用户可以通过安装包中的 ./deploy_download 客户端，可以直接将master节点和minion节点所需要的镜像包下载下来：`./deploy_download -u=<username> -p=<password>`。并且自行将minion节点需要的tar包分发到各个节点上。
