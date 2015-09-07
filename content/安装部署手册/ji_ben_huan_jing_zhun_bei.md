@@ -1,5 +1,5 @@
 ##基本环境准备
-开始部署集群之前，需要在所有的机器上安装好docker环境。ＳailingCloud支持两种docker安装方式：
+开始部署集群之前，需要在所有的机器上安装好docker环境。SailingCloud支持两种docker安装方式：
 * 
 在线安装docker
 * 
