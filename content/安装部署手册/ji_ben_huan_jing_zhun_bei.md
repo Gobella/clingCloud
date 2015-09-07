@@ -1,11 +1,16 @@
 ##基本环境准备
+开始部署集群之前，需要在所有的机器上安装好docker环境。ＳailingCloud支持两种docker安装方式：
+* 
+在线安装docker
+* 
+离线安装docker
 
 ###在线安装docker
 推荐用户根据docker官方文档进行在线安装。SailingCloud会率先支持docker最新稳定版本，请确保docker环境部署正常，docker deamon正常启动之后，再进行后续的操作。
 
 ###离线安装docker
 
-开始部署集群之前，需要在所有的机器上安装好docker环境，目前SailingCloud提供了离线的docker安装方式，要求用户的操作系统是64位的ubuntu14.04或Centos7.0，
+目前SailingCloud提供了离线的docker安装方式，要求用户的操作系统是64位的ubuntu14.04或Centos7.0，
 
 *注：Centos安装时注意改变SOFTWARE SELECTION的Minimal Install默认选项，修改为其他选项（**推荐Server with GUI**）将包安装完整（**操作系统包安装不完整可能会导致离线docker安装后使用不稳定**）
 *
